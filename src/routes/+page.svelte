@@ -1,12 +1,12 @@
 <script>
-	import man from '../assets/images/man.png';
+	import man from "../assets/images/man.png";
 </script>
 
 <main class="flex w-full justify-center h-full">
 	<div class="hero-cta w-full flex flex-col justify-center items-center">
 		<div class="ml-52">
 			<h1 class="text-8xl font-black text-indigo-500">Skill Scout</h1>
-			<p class="w-[600px] text-2xl mt-8 text-justify">
+			<p class="w-[600px] text-3xl mt-8 text-justify">
 				A scouting software providing you with internships as well as certifications and training of
 				your personal favorite skill
 			</p>

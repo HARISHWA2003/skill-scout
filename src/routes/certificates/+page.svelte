@@ -1,124 +1,26 @@
-<section class="text-gray-600 body-font">
-	<div class="container px-20 py-20 mx-32">
-		<div class="flex flex-wrap -m-8">
-			<div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-				<a href="/" class="block relative h-48 rounded overflow-hidden">
-					<img
-						alt="ecommerce"
-						class="object-cover object-center w-full h-full block"
-						src="https://dummyimage.com/420x260"
-					/>
-				</a>
-				<div class="mt-4">
-					<h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-					<h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-					<p class="mt-1">$16.00</p>
-				</div>
-			</div>
+<script>
+	import icon_google from "../../assets/images/icon-google.png";
+	import cloud from "../../assets/images/cloud.svg";
+</script>
 
-			<div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-				<a href="/" class="block relative h-48 rounded overflow-hidden">
-					<img
-						alt="ecommerce"
-						class="object-cover object-center w-full h-full block"
-						src="https://dummyimage.com/421x261"
-					/>
-				</a>
-				<div class="mt-4">
-					<h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-					<h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
-					<p class="mt-1">$21.15</p>
-				</div>
-			</div>
-
-			<div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-				<a href="/" class="block relative h-48 rounded overflow-hidden">
-					<img
-						alt="ecommerce"
-						class="object-cover object-center w-full h-full block"
-						src="https://dummyimage.com/422x262"
-					/>
-				</a>
-				<div class="mt-4">
-					<h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-					<h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
-					<p class="mt-1">$12.00</p>
-				</div>
-			</div>
-		</div>
-		<div class="flex flex-wrap -m-8">
-			<!-- <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-				<a href="/" class="block relative h-48 rounded overflow-hidden">
-					<img
-						alt="ecommerce"
-						class="object-cover object-center w-full h-full block"
-						src="https://dummyimage.com/423x263"
-					/>
-				</a>
-				<div class="mt-4">
-					<h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-					<h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-					<p class="mt-1">$18.40</p>
-				</div>
-			</div> -->
-			<div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-				<a href="/" class="block relative h-48 rounded overflow-hidden">
-					<img
-						alt="ecommerce"
-						class="object-cover object-center w-full h-full block"
-						src="https://dummyimage.com/424x264"
-					/>
-				</a>
-				<div class="mt-4">
-					<h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-					<h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-					<p class="mt-1">$16.00</p>
-				</div>
-			</div>
-
-			<div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-				<a href="/" class="block relative h-48 rounded overflow-hidden">
-					<img
-						alt="ecommerce"
-						class="object-cover object-center w-full h-full block"
-						src="https://dummyimage.com/425x265"
-					/>
-				</a>
-				<div class="mt-4">
-					<h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-					<h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
-					<p class="mt-1">$21.15</p>
-				</div>
-			</div>
-
-			<div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-				<a href="/" class="block relative h-48 rounded overflow-hidden">
-					<img
-						alt="ecommerce"
-						class="object-cover object-center w-full h-full block"
-						src="https://dummyimage.com/427x267"
-					/>
-				</a>
-				<div class="mt-4">
-					<h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-					<h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
-					<p class="mt-1">$12.00</p>
-				</div>
-			</div>
-			<!-- <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-				<a href="/" class="block relative h-48 rounded overflow-hidden">
-					<img
-						alt="ecommerce"
-						class="object-cover object-center w-full h-full block"
-						src="https://dummyimage.com/428x268"
-					/>
-				</a>
-				<div class="mt-4">
-					<h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-					<h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-					<p class="mt-1">$18.40</p>
-				</div>
-			</div> -->
+<div
+	class="w-100 h-3/5 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+>
+	<a href="/">
+		<img class="p-8 rounded-t-lg" src={cloud} alt="product image" />
+	</a>
+	<div class="px-5 pb-5">
+		<a href="/">
+			<h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+				Cloud Computing
+			</h5>
+		</a>
+		<div class="flex items-center justify-between">
+			<a
+				href="/"
+				class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+				>Buy this course</a
+			>
 		</div>
 	</div>
-</section>
+</div>
