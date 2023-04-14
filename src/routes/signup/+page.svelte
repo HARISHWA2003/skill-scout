@@ -10,7 +10,7 @@
 	<div class="logindiv">
 		<img class="ellipse2" src={ellipse2} alt="ellipse2" />
 		<div class="login-form">
-			<div class="login-form-header">Login</div>
+			<div class="login-form-header">Sign-Up</div>
 			<img
 				class="form-logo hover:transform hover:scale-110 hover:-rotate-6 transition"
 				src={logo_white}
@@ -19,10 +19,7 @@
 			/>
 			<input type="email" name="email" id="email" />
 			<input type="password" name="password" id="password" />
-			<div class="forgot-text">
-				<span>Forgot </span><span class="colored-text">Password / Username </span><span>?</span>
-			</div>
-			<button class="btn-login text-xl">Login</button>
+			<button class="btn-login text-xl">Sign-Up</button>
 			<div class="separator">
 				<hr class="hr-left" />
 				<span class="sep-text">Sign up with</span>

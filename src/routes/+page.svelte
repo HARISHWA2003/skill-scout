@@ -16,6 +16,12 @@
 					class="bg-indigo-500 text-2xl text-white p-2 px-10 rounded hover:bg-indigo-700 transition"
 					>Login</a
 				>
+
+				<a
+					href="/signup"
+					class="bg-white text-2xl mx-36 text-indigo-700 border-2 border-indigo-700 p-2 px-10 rounded hover:bg-slate-200 transition"
+					>Sign-up</a
+				>
 			</div>
 		</div>
 	</div>
