@@ -5,8 +5,8 @@
 <nav class="flex justify-between p-4 px-28 w-full bg-indigo-400 items-center z-10">
 	<div class="nav-links flex w-2/3 justify-between text-xl font-bold text-white">
 		<a href="/" class="text-gray-800">Home</a>
-		<a href="/">Analytics</a>
-		<a href="/">Internship</a>
+		<a href="/privateProfile">Profile</a>
+		<a href="/internships">Internship</a>
 		<a href="/certificates">Certificate</a>
 	</div>
 	<div class="logo flex w-full justify-end">

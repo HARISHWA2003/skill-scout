@@ -4,22 +4,66 @@
 	import icon_google from "../../assets/images/icon-google.png";
 	import icon_outlook from "../../assets/images/icon-outlook.png";
 	import icon_linkedin from "../../assets/images/icon-linkedin.png";
+	import { authHandlers, authStore } from "../../stores/authStore";
+	let email = "";
+	let password = "";
+	let confirmpassword = "";
+	async function handleSubmit() {
+		console.log("trying to signup");
+		if (email && password === confirmpassword) {
+			try {
+				await authHandlers.signup(email, password);
+				console.log("succesful");
+			} catch (err) {
+				console.log(err);
+			}
+		}
+		if ($authStore.currentUser) {
+			window.location.href = "/privateProfile";
+		}
+	}
 </script>
 
 <div class="flex h-full w-full justify-center">
 	<div class="logindiv">
 		<img class="ellipse2" src={ellipse2} alt="ellipse2" />
-		<div class="login-form">
-			<div class="login-form-header">Sign-Up</div>
+		<form class="login-form" on:submit={handleSubmit}>
+			<div class="login-form-header">Sign Up</div>
 			<img
 				class="form-logo hover:transform hover:scale-110 hover:-rotate-6 transition"
 				src={logo_white}
 				alt="logo"
 				srcset=""
 			/>
-			<input type="email" name="email" id="email" />
-			<input type="password" name="password" id="password" />
-			<button class="btn-login text-xl">Sign-Up</button>
+			<input
+				bind:value={email}
+				type="email"
+				name="email"
+				placeholder="   Email"
+				id="email"
+				required
+			/>
+			<input
+				bind:value={password}
+				type="password"
+				name="password"
+				placeholder="   Password"
+				id="password"
+				required
+			/>
+			<input
+				bind:value={confirmpassword}
+				type="password"
+				name="password"
+				placeholder="   Confirm Password"
+				id="password"
+				required
+			/>
+			<button
+				type="submit"
+				class="bg-indigo-500 text-xl text-white p-1 px-10 mt-6 rounded hover:bg-indigo-700 transition"
+				>Sign Up</button
+			>
 			<div class="separator">
 				<hr class="hr-left" />
 				<span class="sep-text">Sign up with</span>
@@ -30,7 +74,7 @@
 				<a href="/"><img src={icon_google} alt="google" srcset="" /></a>
 				<a href="/"><img src={icon_linkedin} alt="linkedin" srcset="" /></a>
 			</div>
-		</div>
+		</form>
 	</div>
 </div>
 
@@ -40,7 +84,11 @@
 		align-items: center;
 		justify-content: center;
 		height: 100vh;
-		color: white;
+		color: black;
+	}
+
+	.login-form > input {
+		padding: 10px;
 	}
 
 	.ellipse2 {
@@ -96,20 +144,21 @@
 	.forgot-text {
 		font-weight: bold;
 		margin-top: 30px;
+		color: white;
 	}
 
 	.colored-text {
 		color: #5a7fff;
 	}
 
-	.btn-login {
+	/* .btn-login {
 		background-color: #5a7fff;
 		border: none;
 		cursor: pointer;
 		padding: 10px 60px;
 		border-radius: 5px;
 		margin-top: 30px;
-	}
+	} */
 
 	.separator {
 		display: flex;
@@ -117,6 +166,7 @@
 		font-weight: bold;
 		align-items: center;
 		margin-top: 40px;
+		color: white;
 	}
 
 	.hr-left,
