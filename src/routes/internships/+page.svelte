@@ -183,23 +183,22 @@
 		placeholder="Search Internships..."
 	/>
 </div>
-<div class="internship">
-	{#each selectedInternship as internship}
-		<div class="internship">{internship.name}: {internship.url}</div>
-	{/each}
+<div class="flex w-full h-full justify-center items-center mt-8 px-24">
+	<div class="courses grid grid-cols-3 gap-4">
+		{#each selectedInternship as internship}
+			<div
+				class="course flex flex-col text-white justify-between items-center border-2 bg-[#2B3148] w-[500px] h-[300px] p-4 rounded-xl hover:border-2 hover:border-indigo-400 shadow-none hover:shadow-lg hover:shadow-gray-400 hover:-translate-y-1 transition cursor-pointer py-16"
+			>
+				<h1 class="text-2xl font-bold text-center">{internship.name}:</h1>
+				<a
+					class="bg-indigo-400 hover:bg-indigo-600 py-3 px-8 rounded-lg text-white text-lg border-b-4 border-indigo-500 hover:border-indigo-800 transition duration-300"
+					href={internship.url}
+					target="_blank">Apply Now</a
+				>
+			</div>
+		{/each}
+	</div>
 </div>
 
 <style>
-	.internship {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.internship {
-		width: 600px;
-		height: 100px;
-		border: 1px solid black;
-		/* margin: 60px;
-		padding: 40px; */
-	}
 </style>

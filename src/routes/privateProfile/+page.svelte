@@ -12,4 +12,6 @@
 	});
 </script>
 
-<h1>Current User: {email}</h1>
+{#if $authStore.currentUser}
+	<h1>Current User: {email}</h1>
+{/if}
