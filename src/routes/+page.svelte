@@ -1,5 +1,17 @@
 <script>
 	import man from "../assets/images/man.png";
+	import { authStore, authHandlers } from "../stores/authStore";
+	async function handleSubmit() {
+		console.log("trying to login");
+		if ($authStore.currentUser) {
+			try {
+				await authHandlers.logout();
+				console.log("succesful");
+			} catch (err) {
+				console.log(err);
+			}
+		}
+	}
 </script>
 
 <main class="flex w-full justify-center h-full">
@@ -10,19 +22,36 @@
 				A scouting software providing you with internships as well as certifications and training of
 				your personal favorite skill
 			</p>
-			<div class="mt-12 flex">
-				<a
-					href="/login"
-					class="bg-indigo-500 text-2xl text-white p-2 px-10 rounded hover:bg-indigo-700 transition"
-					>Login</a
-				>
+			{#if $authStore.currentUser}
+				<p class="w-[600px] text-3xl mt-8 text-justify">Welcome to Skill-Scout. Check out...</p>
+				<div class="mt-12 flex">
+					<a
+						href="/privateProfile"
+						class="bg-indigo-500 text-2xl text-white p-2 px-10 rounded hover:bg-indigo-700 transition"
+						>Profile</a
+					>
 
-				<a
-					href="/signup"
-					class="bg-white text-2xl mx-36 text-indigo-700 border-2 border-indigo-700 p-2 px-10 rounded hover:bg-slate-200 transition"
-					>Sign-up</a
-				>
-			</div>
+					<button
+						on:click={handleSubmit}
+						class="bg-white text-2xl mx-36 text-indigo-700 border-2 border-indigo-700 p-2 px-10 rounded hover:bg-slate-200 transition"
+						>Logout</button
+					>
+				</div>
+			{:else}
+				<div class="mt-12 flex">
+					<a
+						href="/login"
+						class="bg-indigo-500 text-2xl text-white p-2 px-10 rounded hover:bg-indigo-700 transition"
+						>Login</a
+					>
+
+					<a
+						href="/signup"
+						class="bg-white text-2xl mx-36 text-indigo-700 border-2 border-indigo-700 p-2 px-10 rounded hover:bg-slate-200 transition"
+						>Sign-up</a
+					>
+				</div>
+			{/if}
 		</div>
 	</div>
 	<div class="hero-image w-full justify-end overflow-hidden">

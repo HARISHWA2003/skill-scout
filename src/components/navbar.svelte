@@ -8,6 +8,7 @@
 		<a href="/privateProfile">Profile</a>
 		<a href="/internships">Internship</a>
 		<a href="/certificates">Certificate</a>
+		<!-- <a href="/testPage">Test Page</a> -->
 	</div>
 	<div class="logo flex w-full justify-end">
 		<a href="/" class="hover:transform hover:scale-110 hover:-rotate-6 transition"
